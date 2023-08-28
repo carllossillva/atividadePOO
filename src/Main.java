@@ -1,17 +1,32 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Banco banco1 = new Banco(1, "Bradesco", "Rua Principal, 123");
+        Cliente cliente1 = new Cliente(1, "João");
+        AgenciaFisica agencia1 = new AgenciaFisica(101, "Agência Casa amarela");
+        Conta conta1 = new Conta(1001, 1231, 101);
+        Funcionario funcionario1 = new Funcionario(10001, "Pedro");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Banco banco2 = new Banco(3, "Itau", "Rua Direita, 127");
+        Cliente cliente2 = new Cliente(1, "Carlos");
+        AgenciaFisica agencia2 = new AgenciaFisica(101, "Agência Dantas barreto");
+        Conta conta2 = new Conta(1453, 632, 176);
+        Funcionario funcionario2 = new Funcionario(10886, "Gabriel");
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        // Exibir dados iniciais
+        banco1.exibirDados();
+        cliente1.exibirDados();
+        agencia1.exibirDados();
+        conta1.exibirDados();
+        funcionario1.exibirDados();
+
+        banco2.exibirDados();
+        cliente2.exibirDados();
+        agencia2.exibirDados();
+        conta2.exibirDados();
+        funcionario2.exibirDados();
+
+
+
+
     }
 }
